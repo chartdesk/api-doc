@@ -68,7 +68,7 @@
 **Step 4:** Click on `Authorize` to test the API call
 
 - Instruction Video
-[![Watch the video]](images/app_api_docs.mp4)
+![Watch the video](https://drive.google.com/file/d/1ReL3EzkOk7PkF88YYhbIcObsMSxDV3Iy/view?usp=sharing)
 
 ## Common Issues
 

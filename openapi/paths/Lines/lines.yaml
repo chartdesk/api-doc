@@ -3,7 +3,7 @@ get:
   - Lines
   summary: Get Accessible Lines
   description: >
-    - Return list of lines which Accessible
+    - Return list of lines which accessible
 
     - API rate limit is 30 requests per minute
   operationId: getLines

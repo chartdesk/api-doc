@@ -1,7 +1,7 @@
 get:
   tags:
   - Lines
-  summary: Get accessable lines
+  summary: Get Accessible Lines
   description: >
     - Return list of lines which accessable
 

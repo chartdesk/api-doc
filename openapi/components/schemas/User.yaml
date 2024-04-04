@@ -1,0 +1,11 @@
+properties:
+  id:
+    type: integer
+  avatar:
+    type: string
+  name:
+    type: string
+  departments:
+    type: string
+  user_name:
+    type: string

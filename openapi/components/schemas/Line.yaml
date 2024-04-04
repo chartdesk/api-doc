@@ -1,0 +1,7 @@
+properties:
+  id:
+    type: integer
+  email:
+    type: string
+  can_send:
+    type: boolean

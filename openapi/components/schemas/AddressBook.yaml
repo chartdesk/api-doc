@@ -1,0 +1,105 @@
+properties:
+  id:
+    type: integer
+    example: 1
+  contact_type:
+    type: string
+    example: contact
+    enum:
+    - company
+    - department
+    - contact
+  name:
+    type: string
+    example: chartdesk
+  salutation:
+    type: string
+    example: hellooooooo babey
+  job_title:
+    type: string
+    example: this is job_title
+  email_address_work_1:
+    type: string
+    example: email_address_work_1@chartdesk.pro
+  email_address_work_2:
+    type: string
+    example: email_address_work_2@chartdesk.pro
+  email_address_work_3:
+    type: string
+    example: email_address_work_3@chartdesk.pro
+  email_address_personal_1:
+    type: string
+    example: email_address_personal_1@chartdesk.pro
+  email_address_personal_2:
+    type: string
+    example: email_address_personal_2@chartdesk.pro
+  email_address_personal_3:
+    type: string
+    example: email_address_personal_3@chartdesk.pro
+  email_address_other_1:
+    type: string
+    example: email_address_other_1@chartdesk.pro
+  email_address_other_2:
+    type: string
+    example: email_address_other_2@chartdesk.pro
+  email_address_other_3:
+    type: string
+    example: email_address_other_3@chartdesk.pro
+  phone_mobile_1:
+    type: string
+    example: "+380 48 7165731"
+  phone_mobile_2:
+    type: string
+    example: "+380 48 7165732"
+  phone_mobile_3:
+    type: string
+    example: "+380 48 7165733"
+  phone_office_1:
+    type: string
+    example: "+380 48 716573"
+  phone_office_2:
+    type: string
+    example: "+380 48 7165732"
+  phone_office_3:
+    type: string
+    example: "+380 48 7165733"
+  phone_fax_1:
+    type: string
+    example: "+380 48 7165731"
+  phone_fax_2:
+    type: string
+    example: "+380 48 7165732"
+  phone_fax_3:
+    type: string
+    example: "+380 48 7165733"
+  phone_other_1:
+    type: string
+    example: "+380 48 7165731"
+  phone_other_2:
+    type: string
+    example: "+380 48 7165732"
+  phone_other_3:
+    type: string
+    example: "+380 48 7165733"
+  im:
+    type: string
+  company:
+    type: integer
+  department:
+    type: integer
+  post_address:
+    type: string
+    example: 1, Leytenanta Shmidta Street UA-65012 Odessa
+  city:
+    type: string
+  state:
+    type: string
+  country:
+    type: string
+    example: VietNam
+  web_url:
+    type: string
+    example: https://chartdesk.pro/
+  notes:
+    type: string
+    example: First note Second note

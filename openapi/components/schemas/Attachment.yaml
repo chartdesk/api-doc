@@ -1,0 +1,18 @@
+type: object
+properties:
+  id:
+    type: integer
+  original_file_url:
+    type: string
+  name:
+    type: string
+  disposition:
+    type: string
+    enum:
+    - link
+    - attachment
+    - inline
+  size:
+    type: integer
+  content_type:
+    type: string

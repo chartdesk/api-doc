@@ -1,0 +1,128 @@
+post:
+  tags:
+  - Emails
+  summary: Send Email
+  description: >
+    - Send email via api
+
+    - API rate limit is 10 requests per minute
+  operationId: sendEmail
+  security:
+  - OAuth2:
+    - send_mail
+    - create_mail
+  parameters: []
+  responses:
+    '200':
+      description: successful
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                enum:
+                - created
+    '401':
+      description: Unauthorized
+    '403':
+      description: Invalid scope
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            from:
+              type: string
+            subject:
+              type: string
+            body:
+              type: string
+            body_type:
+              type: string
+              enum:
+              - plain_text
+              - html
+            action:
+              type: string
+              enum:
+              - normal
+              - reply
+              - forward
+              - replyall
+            to:
+              type: object
+              properties:
+                emails:
+                  type: array
+                  items:
+                    type: string
+                  description: array of email address
+                address_group_ids:
+                  type: array
+                  items:
+                    type: string
+                  description: address group ids in ChartDesk
+            cc:
+              type: object
+              properties:
+                emails:
+                  type: array
+                  items:
+                    type: string
+                  description: array of email address
+                address_group_ids:
+                  type: array
+                  items:
+                    type: string
+                  description: address group ids in ChartDesk
+            bcc:
+              type: object
+              properties:
+                emails:
+                  type: array
+                  items:
+                    type: string
+                  description: array of email address
+                address_group_ids:
+                  type: array
+                  items:
+                    type: string
+                  description: address group ids in ChartDesk
+            attachments:
+              type: array
+              items:
+                type: integer
+              description: array of attachment ids
+        examples:
+          SimpleEmail:
+            value:
+              from: hello@chartdesk.pro
+              body_type: plain_text
+              subject: hello
+              body: Hi there
+              to:
+                emails:
+                - your_emai@email.com
+              cc:
+                emails:
+                - your_cc@email.com
+              action: normal
+          EmailWithAttachments:
+            value:
+              from: hello@chartdesk.pro
+              body_type: plain_text
+              subject: email with attachments
+              body: Hi there
+              to:
+                emails:
+                - your_emai@email.com
+              cc:
+                emails:
+                - your_cc@email.com
+              action: normal
+              attachments:
+              - 1
+              - 2

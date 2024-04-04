@@ -1,0 +1,31 @@
+get:
+  tags:
+  - Address Book
+  summary: Get detail of AddressBook by ID
+  description: >
+    - Get detail of AddressBook by ID
+
+    - API rate limit is 300 requests per minute
+  operationId: getAddressBookById
+  security:
+  - OAuth2:
+    - address_books
+  parameters:
+  - name: id
+    in: path
+    description: This is the id of address_book
+    required: true
+    schema:
+      type: integer
+      default: 1
+  responses:
+    '200':
+      description: It returns the address_book
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/schemas/AddressBook.yaml"
+    '401':
+      description: unauthorized
+    '404':
+      description: the record is not found

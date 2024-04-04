@@ -1,0 +1,14 @@
+securitySchemes:
+  OAuth2:
+    type: oauth2
+    flows:
+      authorizationCode:
+        authorizationUrl: https://endpoint.staging-api.chartdesk.net/oauth/authorize
+        tokenUrl: https://endpoint.staging-api.chartdesk.net/oauth/token
+        scopes:
+          public: access user info
+          send_mail: create and sending email
+          read: read user info
+          create_attachment: upload attachment
+          create_mail: create email
+          address_books: access to address_books

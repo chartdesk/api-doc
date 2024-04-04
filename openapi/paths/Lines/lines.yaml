@@ -1,0 +1,22 @@
+get:
+  tags:
+  - Lines
+  summary: Get accessable lines
+  description: >
+    - Return list of lines which accessable
+
+    - API rate limit is 30 requests per minute
+  operationId: getLines
+  security:
+  - OAuth2:
+    - read
+    - public
+  responses:
+    '200':
+      description: successful
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas/ArrayOfLine.yaml'
+    '401':
+      description: Unauthorized

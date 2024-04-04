@@ -1,0 +1,41 @@
+post:
+  tags:
+  - Attachments
+  summary: Upload an attachment
+  description: >
+    - Upload an attachment to the server
+
+    - API rate limit is 20 requests per minute
+  operationId: uploadAttachment
+  security:
+  - OAuth2:
+    - create_attachment
+  parameters: []
+  responses:
+    '201':
+      description: created
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas/Attachment.yaml'
+    '401':
+      description: Unauthorized
+    '403':
+      description: Invalid scope
+  requestBody:
+    content:
+      multipart/form-data:
+        schema:
+          type: object
+          properties:
+            file:
+              type: string
+              description: The raw content of file to upload
+            disposition:
+              type: string
+              enum:
+              - inline
+              - attachment
+              - link
+          required:
+          - file

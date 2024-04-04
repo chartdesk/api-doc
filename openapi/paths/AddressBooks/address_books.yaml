@@ -1,0 +1,44 @@
+get:
+  tags:
+  - Address Book
+  summary: Get address_books
+  description: >
+    - Get list address_books
+
+    - API rate limit is 60 requests per minute
+  operationId: getAddressBooks
+  security:
+  - OAuth2:
+    - address_books
+  parameters:
+  - name: page
+    in: query
+    description: The page of list address_books
+    required: false
+    explode: true
+    schema:
+      type: integer
+      default: 1
+  - name: per_page
+    in: query
+    description: The number of records per page
+    required: false
+    explode: true
+    schema:
+      type: integer
+      default: 10
+      enum:
+      - 10
+      - 20
+      - 30
+      - 40
+      - 50
+  responses:
+    '200':
+      description: It will return the list of address_books with page and per_page
+      content:
+        application/json:
+          schema:
+            $ref: "../../components/schemas/ArrayOfAddressBook.yaml"
+    '401':
+      description: unauthorized

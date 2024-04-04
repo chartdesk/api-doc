@@ -1,0 +1,22 @@
+get:
+  tags:
+  - Me
+  summary: Get Myself Information
+  description: >
+    - Get information of the current user
+
+    - API rate limit is 10 requests per minute
+  operationId: getMySelfInformation
+  security:
+  - OAuth2:
+    - read
+    - public
+  responses:
+    '200':
+      description: successful
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas/User.yaml'
+    '401':
+      description: Unauthorized

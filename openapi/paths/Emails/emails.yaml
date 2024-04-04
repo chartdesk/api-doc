@@ -99,7 +99,7 @@ post:
         examples:
           SimpleEmail:
             value:
-              from: hello@chartdesk.pro
+              from: hello@marinetraffic.com
               body_type: plain_text
               subject: hello
               body: Hi there
@@ -112,7 +112,7 @@ post:
               action: normal
           EmailWithAttachments:
             value:
-              from: hello@chartdesk.pro
+              from: hello@marinetraffic.com
               body_type: plain_text
               subject: email with attachments
               body: Hi there

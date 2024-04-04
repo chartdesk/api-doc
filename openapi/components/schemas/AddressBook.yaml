@@ -14,37 +14,37 @@ properties:
     example: chartdesk
   salutation:
     type: string
-    example: hellooooooo babey
+    example: Dear Mr.MarineTrffic
   job_title:
     type: string
     example: this is job_title
   email_address_work_1:
     type: string
-    example: email_address_work_1@chartdesk.pro
+    example: email_address_work_1@marinetraffic.com
   email_address_work_2:
     type: string
-    example: email_address_work_2@chartdesk.pro
+    example: email_address_work_2@marinetraffic.com
   email_address_work_3:
     type: string
-    example: email_address_work_3@chartdesk.pro
+    example: email_address_work_3@marinetraffic.com
   email_address_personal_1:
     type: string
-    example: email_address_personal_1@chartdesk.pro
+    example: email_address_personal_1@marinetraffic.com
   email_address_personal_2:
     type: string
-    example: email_address_personal_2@chartdesk.pro
+    example: email_address_personal_2@marinetraffic.com
   email_address_personal_3:
     type: string
-    example: email_address_personal_3@chartdesk.pro
+    example: email_address_personal_3@marinetraffic.com
   email_address_other_1:
     type: string
-    example: email_address_other_1@chartdesk.pro
+    example: email_address_other_1@marinetraffic.com
   email_address_other_2:
     type: string
-    example: email_address_other_2@chartdesk.pro
+    example: email_address_other_2@marinetraffic.com
   email_address_other_3:
     type: string
-    example: email_address_other_3@chartdesk.pro
+    example: email_address_other_3@marinetraffic.com
   phone_mobile_1:
     type: string
     example: "+380 48 7165731"
@@ -99,7 +99,7 @@ properties:
     example: VietNam
   web_url:
     type: string
-    example: https://chartdesk.pro/
+    example: https://marinetraffic.com/
   notes:
     type: string
     example: First note Second note

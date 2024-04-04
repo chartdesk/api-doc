@@ -68,7 +68,7 @@
 **Step 4:** Click on `Authorize` to test the API call
 
 - Instruction Video
-[CLICK HERE](images/app_api_docs.mp4)
+[![Watch the video]](images/app_api_docs.mp4)
 
 ## Common Issues
 

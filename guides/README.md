@@ -26,11 +26,11 @@
 
 **Step 3:** Click on “New Application”
 
-  ![alt_text](images/image1.png)
+  ![alt_text](images/new_application.png)
 
 **Step 4:** Fill in the required information
 
-  ![alt_text](images/image2.png)
+  ![alt_text](images/new_application_form.png)
 
   - Application Name
 
@@ -53,7 +53,7 @@
 
 **Step 5:** You will find a screen of the created application  details with UID, Secret, and Scopes.
 
-![alt_text](images/image3.png)
+![alt_text](images/application_detail.png)
 
 ## How To Test An API Call
 
@@ -63,7 +63,7 @@
 
 **Step 3:** Click on “Authorize”, fill in the client_id (UID), client_secret (Secret) that you received on the Application Created page, and click on “select all” in Scopes.
 
-![alt_text](images/image4.png)
+![alt_text](images/authorize_form.png)
 
 **Step 4:** Click on `Authorize` to test the API call
 
@@ -78,7 +78,7 @@
 1. Users need to make sure to remove the cookies and close this page
 2. Then login to [https://staging.chartdesk.pro/#/login](https://staging.chartdesk.pro/#/login) to reopen [https://endpoint.staging-api.chartdesk.net/users/sign_in](https://endpoint.staging-api.chartdesk.net/users/sign_in)
 
-![alt_text](images/image5.png)
+![alt_text](images/issue_cookies.png)
 
 # API Usage Guide
 

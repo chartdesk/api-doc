@@ -20,7 +20,7 @@ info:
 
     # Requirements
 
-      - Make sure you have an application following this [guide](https://docs.google.com/document/d/1gOdzz4zYcJ5SVtY4xl-kn3isu04wQdBJHJAAPxoTJTc/edit?usp=sharing)
+      - Make sure you have an application following this [guide](https://github.com/chartdesk/api-doc/blob/main/guides/README.md)
 servers:
   - url: https://endpoint.{domain}
     variables:
